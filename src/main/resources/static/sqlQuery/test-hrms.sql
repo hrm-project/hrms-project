@@ -86,6 +86,13 @@ insert into test_club
 (club_NAME, EMP_NO)
 values ("영화동호회", 3);
 
+--메일 삽입 테스트용
+ insert into hr_email (mail_to , mail_from, mail_title, mail_content)
+ values(2,6,"결제부탁드립니다","테스트용메일입니다");
+
+      	--  mail_to 수신자 mail_from 발신자 숫자만 바꿔서 발송할 것
+
+
 -- 동호회 게시판
 drop table HR_CLUB_BOARD; 
 create table TEST_CLUB_BOARD(
